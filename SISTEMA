@@ -9,21 +9,20 @@ print(Fore.LIGHTYELLOW_EX + "Olá, seja bem-vindo!")
 print(Fore.GREEN + "-" * 40)
 
 print(Fore.YELLOW + "Como se chama?")
-nome = input(Fore.LIGHTYELLOW_EX + "Digite seu nome e usuário: ")
+nome = input(Fore.LIGHTYELLOW_EX + "Digite seu nome de usuário: ")
 
 print(Fore.LIGHTBLACK_EX + "-" * 40)
 print(Fore.LIGHTBLACK_EX + f"Olá, {nome}! Prazer em conhecê-lo.")
 print(Fore.LIGHTBLACK_EX + "-" * 40)
 
 print(Fore.LIGHTBLACK_EX + "-" * 40)
-print("Vamos iniciar o Sistema ...")
+print(Fore.LIGHTWHITE_EX + "Vamos iniciar o sistema...")
 print(Fore.LIGHTBLACK_EX + "-" * 40)
 
-# Animação de carregamento
 for i in range(5):
-    print(Fore.LIGHTCYAN_EX + "Carregando" + "." * (i % 4 + 1), end="\r")
+    pontos = "." * (i % 4 + 1)
+    print(Fore.LIGHTCYAN_EX + "Carregando" + pontos, end="\r")
     time.sleep(0.5)
 
-# Após o loop de carregamento, exibe "Sistema iniciado!"
-print(Fore.LIGHTCYAN_EX + "Sistema iniciado!" + " " * 10)  
+print(Fore.LIGHTCYAN_EX + "Sistema iniciado!" + " " * 10)
 print(Fore.LIGHTCYAN_EX + "-" * 40)
